@@ -8,30 +8,30 @@ int isprime( int );
 int main()
 {
 
-  int ar[10], n;
+  int ar[10];
 
+  cout<<"enter the numbers"<<endl;
   for( int i = 0; i < 10; i++  )
    {
-     cout<<"enter the numbers"<<endl;
+
      cin>>ar[i];
    }
-   cout<<"number of prime numbers are"<<primecount( ar, n)<<endl;
-return 0;
+
+   cout<<"number of prime numbers is"<<primecount( ar, 10)<<endl;
+   return 0;
 }
 
 int primecount( int a[], int size )
-
 {
 int i,count=0;
-int num;
 for( i = 0; i < size ; i++ )
  {
-   if(isprime( num )==1)
+   if(isprime( a[i] )==1)
    {
      count++;
    }
-   return count;
  }
+return count;
 }
 
 int isprime(int a )
