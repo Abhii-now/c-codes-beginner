@@ -3,7 +3,6 @@
 using namespace std;
 
 int main()
-
 {
   int rs,n2000,n500,n200,n50,n20,n10,n5,n2,n1,ntotal;
 
@@ -28,10 +27,7 @@ int main()
   rs=rs%2;
   n1=rs/1;
   cout<<n2000<<" "<<n500<<" "<<n200<<" "<<n50<<" "<<n20<<" "<<n10<<" "<<n5<<" "<<n2<<" "<<n1<<endl;
- ntotal=n2000+n500+n200+n50+n20+n10+n5+n2+n1;
-cout<<"total notes are"<<ntotal<<endl;
-return 0;
-
-
-
+  ntotal=n2000+n500+n200+n50+n20+n10+n5+n2+n1;
+  cout<<"total notes are"<<ntotal<<endl;
+  return 0;
 }
