@@ -21,8 +21,8 @@ int main()
   cout<<n;
   for(int i=0; str[i] != NULL; i++)
   {
-    str[i]=a[n-i];
+    a[n-i]=str[i];
   }
-  cout<<str;
+  cout<<a;
   return 0;
 }
